@@ -15,7 +15,9 @@
         'Clear-AllEventLog'
         'Get-ServiceLogonAccount'
         'Get-DHCPRecentLease'
-        'Save-PSFConfig')
+        'Save-PSFConfig'
+        'Get-ImcSwitchPort'
+        'Get-IPMAC')
     CmdletsToExport   = ''
     VariablesToExport = ''
     AliasesToExport   = @('sAD')
