@@ -29,14 +29,16 @@ function Get-ServiceLogonAccount
 
     process
     {
-        if ($logonAccount)
-        {
-            $cimResult = Get-cimInstance -Class Win32_Service -ComputerName $ComputerName -filter "startName LIKE '$LogonAccount'"
+        foreach ($computer in $ComputerName) {
+            if ($logonAccount)
+            {
+                $cimResult = Get-cimInstance -Class Win32_Service -ComputerName $computer -filter "startName LIKE '$LogonAccount'"
+            }
+            else
+            {
+                $cimResult = Get-cimInstance -Class Win32_Service -ComputerName $computer  -filter "NOT startName LIKE '%LocalSystem%' AND NOT startName LIKE 'NT%'"
+            }
+            $cimResult | Select-Object DisplayName, StartName, State
         }
-        else
-        {
-            $cimResult = Get-cimInstance -Class Win32_Service -ComputerName $ComputerName  -filter "NOT startName LIKE '%LocalSystem%' AND NOT startName LIKE 'NT%'"
-        }
-        $cimResult | Select-Object DisplayName, StartName, State
     }
 }
