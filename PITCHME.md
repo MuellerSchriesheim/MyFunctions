@@ -4,19 +4,14 @@ Short Functions for daily work
 
 ---
 
-### Getting Started
+## Getting Started
 
-Install from the PSGallery and Import the module
-
-    Install-Module MyFunctions
-    Import-Module MyFunctions
+Install from the GIT and Import the module
 
 ---
 
-### What's next?
+## More Information
 
 For more information
 
-* [MyFunctions.readthedocs.io](http://MyFunctions.readthedocs.io)
 * [github.com/MuellerSchriesheim/MyFunctions](https://github.com/MuellerSchriesheim/MyFunctions)
-* [MuellerSchriesheim.github.io](https://MuellerSchriesheim.github.io)
