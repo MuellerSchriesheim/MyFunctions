@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "P:\\PS_DEV\\00_DAILY_STUFF\\99_SANDBOX\\MyFunctions"
+		}
+	],
+	"settings": {
+		"powershell.codeFormatting.openBraceOnSameLine": false,
+		"powershell.codeFormatting.newLineAfterOpenBrace": true,
+		"powershell.codeFormatting.preset": "Allman",
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"[json]": {
+			"editor.tabSize": 2
+		},
+		"[powershell]": {
+			"files.trimTrailingWhitespace": true
+		},
+	}
+}
