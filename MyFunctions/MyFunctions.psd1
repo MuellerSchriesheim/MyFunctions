@@ -13,7 +13,9 @@
         'Invoke-Ping',
         'Search-ADUser',
         'Clear-AllEventLog'
-        'Get-ServiceLogonAccount')
+        'Get-ServiceLogonAccount'
+        'Get-DHCPRecentLease'
+        'Save-PSFConfig')
     CmdletsToExport   = ''
     VariablesToExport = ''
     AliasesToExport   = @('sAD')
