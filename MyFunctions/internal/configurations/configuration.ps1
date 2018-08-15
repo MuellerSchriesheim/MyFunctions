@@ -16,6 +16,8 @@ $ConfigurationFile = "$($(Get-PSFConfig -Module 'Schriesheim-IT' -Name 'Configur
 
 Set-PSFConfig -Module 'MyFunctions' -Name 'DHCP.FQDN' -Value '' -Initialize -Validation 'String' -Handler { } -Description "DHCP Server der per Get-DHCPRecentLease abgefragt wird." -ModuleExport
 Set-PSFConfig -Module 'MyFunctions' -Name 'IMC.FQDN' -Value '' -Initialize -Validation 'String' -Handler { } -Description "IMC Server der per Get-ImcSwitchPort abgefragt wird." -ModuleExport
+Set-PSFConfig -Module 'MyFunctions' -Name 'SMTP.From' -Value '' -Initialize -Validation 'String' -Handler { } -Description "Absender Adresse die bei der Nutzung von Send-MailMessage in verschiedenen CmdLets genutzt wird." -ModuleExport
+Set-PSFConfig -Module 'MyFunctions' -Name 'SMTP.Server' -Value '' -Initialize -Validation 'String' -Handler { } -Description "SMTP Server der bei der Nutzung von Send-MailMessage von verschiedenen CmdLets genutzt wird." -ModuleExport
 
 If ($ConfigurationFile)
 {

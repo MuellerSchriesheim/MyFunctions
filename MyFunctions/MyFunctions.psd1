@@ -17,7 +17,9 @@
         'Get-DHCPRecentLease'
         'Save-PSFConfig'
         'Get-ImcSwitchPort'
-        'Get-IPMAC')
+        'Get-IPMAC'
+        'Update-PSFConfig',
+        'New-EncryptedZipUsing7Zip')
     CmdletsToExport   = ''
     VariablesToExport = ''
     AliasesToExport   = @('sAD')
