@@ -1,5 +1,16 @@
 ﻿# Changelog MyFunctions Modul
 
+## 0.3.0 - 15.08.2018
+
+### Added
+
+- New-EncryptedZipUsing7Zip
+  Creates a new ZIP File encrypted with a password. Uses 7zip for compression.
+
+- Update-PSFConfig
+  Run through all the settings of a module to set or update settings and export
+  them back to the central setting repository
+
 ## 0.2.0 - 14.08.2018
 
 ### Added
