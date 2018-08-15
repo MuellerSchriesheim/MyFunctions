@@ -2,14 +2,14 @@ function Update-PSFConfig
 {
     <#
 .SYNOPSIS
-    Update-PSFConfig runs through all the setting of the specified module and let the
+    Update-PSFConfig run through all the setting of the specified module and let the
     User set or upate those settings
 .DESCRIPTION
-    Update-PSFConfig runs through all the setting of the specified module and let the
+    Update-PSFConfig run through all the setting of the specified module and let the
     User set or upate those settings.
 .EXAMPLE
     PS C:\> Update-PSFConfig -Module "MyModule"
-    Runs though all the settings of the module MyModule and ask the User for a New
+    Run though all the settings of the module MyModule and ask the User for a New
     or updated value of the setting. At the end the updated settings are exported
     back to the central settings repository
 .PARAMETER ModuleName
