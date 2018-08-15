@@ -1,5 +1,27 @@
 function Update-PSFConfig
 {
+    <#
+.SYNOPSIS
+    Update-PSFConfig runs through all the setting of the specified module and let the
+    User set or upate those settings
+.DESCRIPTION
+    Update-PSFConfig runs through all the setting of the specified module and let the
+    User set or upate those settings.
+.EXAMPLE
+    PS C:\> Update-PSFConfig -Module "MyModule"
+    Runs though all the settings of the module MyModule and ask the User for a New
+    or updated value of the setting. At the end the updated settings are exported
+    back to the central settings repository
+.PARAMETER ModuleName
+    Name of the Module whos settings should be updated
+.PARAMETER NoConfigFile
+    Update the settings only for the current session and dosn't update the setting
+    file. Useful for testing.
+.OUTPUTS
+    [PSFramework.Configuration.Config]
+.NOTES
+    Author: Tobias Mueller
+#>
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
