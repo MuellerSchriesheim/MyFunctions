@@ -1,5 +1,15 @@
 ﻿# Changelog MyFunctions Modul
 
+## 0.4.0 - 21.08.2018
+
+### Added
+
+- Get-PhoneList
+  Retrieves the Phonelist from an  iDoit API Report
+
+- Publish-PhoneList
+  Uploads the Phonelist Files to our Intranetserver
+
 ## 0.3.0 - 15.08.2018
 
 ### Added
