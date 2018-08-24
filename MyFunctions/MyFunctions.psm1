@@ -1,5 +1,5 @@
 ﻿$script:ModuleRoot = $PSScriptRoot
-$script:PSModuleVersion = "0.4.0"
+$script:PSModuleVersion = "0.5.0"
 
 $script:_connectInitialized = $false
 

@@ -3,7 +3,7 @@
 
 @{
     RootModule        = 'MyFunctions.psm1'
-    ModuleVersion     = '0.4.0'
+    ModuleVersion     = '0.5.0'
     GUID              = '9741e3a0-2346-48db-9989-8b6206b72c11'
     Author            = 'Tobias Mueller'
     CompanyName       = 'Stadt Schriesheim'
@@ -21,7 +21,9 @@
         'Update-PSFConfig',
         'New-EncryptedZipUsing7Zip'
         'Publish-PhoneList'
-        'Get-PhoneList')
+        'Get-PhoneList'
+        'Export-ADUserToExcel'
+        'Import-ADUserFromExcel')
     CmdletsToExport   = ''
     VariablesToExport = ''
     AliasesToExport   = @('sAD')

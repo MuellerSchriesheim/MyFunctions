@@ -23,7 +23,8 @@ Set-PSFConfig -Module 'MyFunctions' -Name 'PhoneList.RemotePath' -Value '' -Init
 Set-PSFConfig -Module 'MyFunctions' -Name 'PhoneList.RemoteServer' -Value '' -Initialize -Validation 'String' -Handler { } -Description "Intranetserver auf dem die Telefonliste veröffentlicht wird" -ModuleExport
 Set-PSFConfig -Module 'MyFunctions' -Name 'PhoneList.KeyFile' -Value '' -Initialize -Validation 'String' -Handler { } -Description "Pfad zur OpenSSH Schlüsseldatei die für die SSH Verbindung genutzt wird." -ModuleExport
 Set-PSFConfig -Module 'MyFunctions' -Name 'PhoneList.SSHUser' -Value '' -Initialize -Validation 'String' -Handler { } -Description "User der für die SSH Verbindung genutzt wird." -ModuleExport
-
+Set-PSFConfig -Module 'MyFunctions' -Name 'ADUserExport.ExportPath' -Value '' -Initialize -Validation 'String' -Handler { } -Description "Pfad unter dem die XLS Dateien der AD User Exporte abgelegt werden" -ModuleExport
+Set-PSFConfig -Module 'MyFunctions' -Name 'ADUserExport.ImportFile' -Value '' -Initialize -Validation 'String' -Handler { } -Description "Pfad zur Import Datei für den AD User Import" -ModuleExport
 
 If ($ConfigurationFile)
 {

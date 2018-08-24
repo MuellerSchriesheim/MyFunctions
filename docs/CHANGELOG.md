@@ -1,5 +1,17 @@
 ﻿# Changelog MyFunctions Modul
 
+## 0.5.0 - 24.08.2018
+
+### Added
+
+- Export-ADUserToExcel
+  Exports all User from AD to Excel.
+
+- Import-ADUserFromExcel
+  Read the Content from a special XLSX File and changes the according attributes in the Active Directory
+  Before the import the Script checks what user and attributes are chaning and informs the user about the
+  upcomming changes.
+
 ## 0.4.0 - 21.08.2018
 
 ### Added
