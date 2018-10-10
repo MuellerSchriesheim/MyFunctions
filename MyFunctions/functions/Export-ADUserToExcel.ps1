@@ -54,6 +54,7 @@ Function Export-ADUserToExcel
             'telephoneNumber as Telefon',
             'mobile as Mobil',
             'facsimileTelephoneNumber as Fax',
+            'pager as FaxAbteilung',
             'physicalDeliveryOfficeName as Raum',
             'mail as eMail',
             'description as Beschreibung',

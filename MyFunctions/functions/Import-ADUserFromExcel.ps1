@@ -94,6 +94,7 @@ $($changes | Format-Table -AutoSize | Out-String)
                         OfficePhone   = $User.Telefon
                         MobilePhone   = $User.Mobil
                         Fax           = $user.Fax
+                        Pager         = $user.FaxAbteilung
                         Office        = $user.Raum
                         EmailAddress  = $User.eMail
                         Description   = $User.Beschreibung
